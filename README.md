@@ -1,7 +1,6 @@
-# move_sync
+# MoveSync-慕动
 
 运动社交App (慕动)
-
 
 # 开发环境概述
 
