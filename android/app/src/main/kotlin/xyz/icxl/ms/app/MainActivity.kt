@@ -1,4 +1,4 @@
-package com.example.move_sync
+package xyz.icxl.ms.app
 
 import io.flutter.embedding.android.FlutterActivity
 

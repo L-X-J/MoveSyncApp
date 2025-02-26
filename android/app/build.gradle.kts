@@ -1,11 +1,11 @@
 plugins {
-    id("xyz.android.application")
+    id("com.android.application")
     id("kotlin-android")
     id("dev.flutter.flutter-gradle-plugin")
 }
 
 android {
-    namespace = "xyz.icxl.ms"
+    namespace = "xyz.icxl.ms.app"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
