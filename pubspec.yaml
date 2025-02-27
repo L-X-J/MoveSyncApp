@@ -3,17 +3,94 @@ description: "运动社交App (慕动)"
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
+# isar 版本
+isar_version: &isar_version 3.1.0+1
 environment:
   sdk: ^3.7.0
 dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.8
+  material_symbols_icons: ^4.2805.1
+
+  # GetX
+  # https://github.com/jonataslaw/getx/blob/master/README.zh-cn.md
+  get: ^4.7.2
+
+  # svg 图片加载的插件
+  # https://pub.dev/packages/flutter_svg
+  flutter_svg: ^2.0.17
+  # 网络请求
+  # https://pub.dev/packages/retrofit
+  retrofit: '>=4.0.0 <5.0.0'
+  dio: ^5.8.0+1
+  # 强大的官方 Image 扩展组件, 支持加载以及失败显示，缓存网络图片，缩放拖拽图片，图片浏览(微信掘金效果)，
+  # 滑动退出页面(微信掘金效果)，编辑图片(裁剪旋转翻转)，保存，绘制自定义效果等功能
+  # https://github.com/fluttercandies/extended_image/blob/master/README-ZH.md
+  extended_image: ^9.1.0
+  # 日志
+  # https://pub.dev/packages/logger
+  logger: ^2.5.0
+  # 判断权限
+  # https://pub.dev/packages/permission_handler/install
+  permission_handler: ^11.4.0
+  # 下拉刷新上拉加载
+  # https://pub.dev/packages/easy_refresh
+  easy_refresh: ^3.4.0
+  # 设备信息获取
+  device_info_plus: ^11.3.0
+  # 文件选择器
+  file_picker: ^9.0.1
+  # 官方图片选择不能多选
+  # https://github.com/fluttercandies/flutter_wechat_assets_picker
+  wechat_assets_picker: ^9.5.0
+  #仿微信调用摄像头
+  wechat_camera_picker: ^4.3.7
+  # 图片裁剪 https://pub.dev/packages/image_cropper
+  image_cropper: ^9.0.0
+  # isar 数据库：https://pub.dev/packages/isar
+  isar: *isar_version
+  isar_flutter_libs: *isar_version
+  # 官方Text扩展组件，支持特殊文本效果 ：https://pub.dev/packages/extended_text
+  extended_text: ^15.0.0
+  # webview
+  # https://pub.dev/packages/webview_flutter
+  webview_flutter: ^4.10.0
+  # https://pub.dev/packages/flutter_easyloading
+  flutter_easyloading: ^3.0.5
+  #下载图片保存到相册
+  image_gallery_saver_plus: ^4.0.0-0.alpha
+  # dialog
+  flutter_smart_dialog: ^4.9.8+7
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
+  # 网络请求
+  # https://pub.dev/packages/retrofit
+  retrofit_generator: '>=7.0.0 <8.0.0'
+  build_runner: '>=2.3.0 <4.0.0'
+  # isar 数据库：https://pub.dev/packages/isar
+  isar_generator: *isar_version
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/images/
+  fonts:
+    - family: Bold
+      fonts:
+        - asset: assets/fonts/MiSans-Bold.ttf
+    - family: heavy
+      fonts:
+        - asset: assets/fonts/MiSans-Heavy.ttf
+    - family: Medium
+      fonts:
+        - asset: assets/fonts/MiSans-Medium.ttf
+    - family: Regular
+      fonts:
+        - asset: assets/fonts/MiSans-Regular.ttf
+    - family: Semibold
+      fonts:
+        - asset: assets/fonts/MiSans-Semibold.ttf
